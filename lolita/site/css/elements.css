@@ -274,7 +274,8 @@ header.alternate .sub-menu {}
 
 header.alternate.visible {
     visibility: visible;
-    display: block
+    display: block;
+    background-color: #fff;
 }
 
 /* Gallery */
