@@ -1,0 +1,49 @@
+/* reassign style for composite page by blog */
+
+.composite-content.blog-content .items article.post,
+/* mobile */
+
+.composite-content.blog-content.blog-type-post .items article.post {
+    background: inherit;
+    border-width: 0;
+    padding: 0;
+}
+
+.composite-content .widget .simple-text u a,
+.composite-content .widget .simple-text a u {
+    color: initial;
+    text-decoration: underline;
+}
+
+body.mobile .composite-content .items>header {
+    background: transparent;
+}
+
+body.hugo .composite-content.blog-content {
+    padding: 0;
+}
+
+body.hugo.mobile section.composite .composite-content header h1 {
+    text-transform: uppercase;
+}
+
+body.fabio.mobile .composite-content {
+    overflow-x: hidden;
+}
+
+body.marco .composite-content.blog-content .items article {
+    display: block;
+}
+
+/* widget post-gallery mobile */
+
+body.mobile .blog-content .widget .post-gallery .gallery-photo-box {
+    float: none;
+    width: 100% !important;
+    margin-right: 0 !important;
+}
+
+body.mobile .blog-content .widget .post-gallery .gallery-photo-box img {
+    width: 100% !important;
+    height: auto !important;
+}

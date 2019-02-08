@@ -1,0 +1,102 @@
+header .logo.logo-text {
+    white-space: nowrap;
+}
+
+header nav.menu {}
+
+header nav.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav.menu ul li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+section ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+section ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+/* fix ckeditor + a>img + img copy protection  -  link not clickable */
+
+.feedWrap .bgi_description p a,
+.feedWrap .blog_grid_item .bgi_textWrap a,
+.feedWrap .blog_grid_item p a,
+section.page a,
+body.mobile.structure-page .content a,
+.page .text a,
+section.contact a,
+.contact .contact-box a,
+.contact .description-box a,
+section.calendar .text a,
+section.galcategory .desc a,
+body.mobile section.galcategory .text a,
+section.gallery .desc a,
+section.video .desc a,
+section.photo .desc a,
+section.gallery .bottom-desc a,
+section.gallery .about a,
+section.gallery .text a,
+.testimonials .row .text a,
+section.testimonials .content .text a,
+body.mobile section.testimonials .container>a,
+body.mobile .testimonials-description a,
+body.mobile section.testimonials .testimonial .text a,
+body.mobile section.testimonials .container .text a {
+    display: inline-block;
+}
+
+/* repair link underline for desktop, tablet and mobile */
+
+section.page u a,
+section.video u a,
+section.photo u a,
+section.calendar u a,
+section.galcategory u a,
+section.testimonials u a,
+section.contact u a {
+    text-decoration: underline;
+}
+
+.page .text-template-5 td>a,
+.text-template-5 td>a {
+    display: inline;
+}
+
+body.mobile .page .text-template-5 td>a,
+body.mobile .text-template-5 td>a {
+    display: inherit;
+}
+
+/**
+ *	Copy Protection Tooltip	
+ */
+
+.copy-protector.tooltip {
+    display: none;
+    position: absolute;
+    background: white;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 11px;
+    z-index: 9999;
+    opacity: 0.7
+}
+
+.protect-images .copy-protect {
+    -webkit-user-select: none;
+    /* disable cut copy paste */
+    -webkit-touch-callout: none;
+    /* disable callout, image save panel */
+    -webkit-tap-highlight-color: transparent;
+    /* "turn off" link highlight */
+}

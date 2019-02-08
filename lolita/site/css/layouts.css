@@ -1,0 +1,102 @@
+header.layout-logo-right .menu {
+    text-align: right;
+}
+
+header.layout-logo-right .logo {
+    padding-left: 5px;
+    padding-right: 0;
+}
+
+header.layout-logo-right>.container>.inner {
+    width: 100%;
+}
+
+header.layout-fluid-logo-right .logo {
+    padding-left: 5px;
+    padding-right: 0;
+    text-align: right;
+}
+
+header.layout-fluid-logo-right .menu>ul>.menu-item:first-child {
+    padding-left: 0;
+}
+
+/*header.layout-logo-right > .container > .inner,*/
+
+/*header.layout-fluid-logo-right > .container > .inner,*/
+
+/*header.layout-fluid-logo-left > .container > .inner {*/
+
+/*width: 100%;*/
+
+/*} deprecated replace to header > .container > .inner {width: 100%}*/
+
+header>.container>.inner {
+    width: 100%;
+    /*need to fix table structure (can be replaced with flex model)*/
+}
+
+header.layout-fluid-logo-left .menu {
+    text-align: right;
+}
+
+header.layout-fluid-logo-left .menu>ul>.menu-item:last-child {
+    padding-right: 0;
+}
+
+header.layout-logo-center>.container>.inner {
+    padding-bottom: 15px;
+}
+
+header.layout-logo-center>.container>.inner {
+    display: block;
+}
+
+header.layout-logo-center .logo {
+    text-align: center;
+    display: block;
+    padding: 15px 0px 0px 0px;
+    margin: 0;
+}
+
+header.layout-logo-center .logo {
+    margin-bottom: 25px;
+}
+
+header.layout-logo-center .menu {
+    display: block;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+body>.container>.layout-image-left .thumbnail {
+    margin: 0px 20px 0px 0px;
+    float: left;
+}
+
+body>.container>.layout-image-right>.thumbnail {
+    margin: 0px 0px 0px 20px;
+    float: right;
+}
+
+body>.container>div>.thumbnail {
+    overflow: hidden;
+}
+
+body>.container>div>.thumbnail img {
+    width: auto;
+    max-width: none;
+    position: relative;
+}
+
+body>.content.private .thumbnail {
+    float: left;
+}
+
+/*  #gphw-fb. Design widget.
+=================================================*/
+
+#gphw-fd {
+    position: fixed !important;
+}

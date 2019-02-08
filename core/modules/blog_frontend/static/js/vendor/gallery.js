@@ -1,0 +1,288 @@
+define([
+
+    'backbone'
+
+], function(Backbone) {
+    var Gallery = Backbone.View.extend({
+        // Queue for images
+        queue: [],
+        action: false,
+        timer: null,
+        timerResize: null,
+        timerTime: 0,
+
+        options: {
+            photo: {
+                box: '.photo-box',
+                wrapper: '.photo-box-wrapper',
+                item: '.image'
+            },
+            slideshow: {
+                time: 0,
+                status: 'stop',
+                timer: null
+            },
+            scroll: {
+                action: false,
+                delta: 0,
+                h1: 0,
+                h2: 0
+            },
+        },
+
+        initialize: function() {
+
+            this.queue = [];
+
+            this.parseOptions();
+            this.initSize();
+        },
+
+        parseOptions: function() {
+
+            var self = this;
+
+            var data = this.$el.data() || {};
+
+
+            $.each(data, function(name, value) {
+
+                if (data.hasOwnProperty(name)) {
+                    self.options[name] = value;
+                }
+            });
+
+            return this;
+        },
+
+        initSize: function() {
+            var self = this;
+
+            // Slideshow
+            this.options.slideshow.time = (this.options.slideshowTime == undefined) ? 0 : parseInt(this.options.slideshowTime);
+            this.options.slideshow.status = (this.options.slideshow.time > 0) ? 'start' : 'stop';
+
+            // First image
+            this.$el.find(this.options.photo.item).css('display', 'none');
+            this.$el.find(this.options.photo.item + ':first-child').css('display', 'block');
+
+            // Start size
+            this.$el.find(this.options.photo.box).width('100%');
+
+
+            $(window).on('resize.gallery', function() {
+                // Width for wrapper
+                self.$el.find(self.options.photo.wrapper).width(self.$el.find(self.options.photo.box).width());
+
+                $(self.el).height(parseInt(self.$el.find(self.options.photo.box).width()));
+
+                self.$el.find(self.options.photo.item + ' img').each(function() {
+                    self.setImageSize(this, 1.5, self.options.imagePosition);
+                });
+            }).trigger('resize.gallery');
+        },
+
+        resizeSize: function() {
+            // Height for gallery
+            $(this.el).height(parseInt(this.$el.find(this.options.photo.box).width()));
+        },
+
+        createQueue: function() {
+            var self = this;
+            var a = [];
+            var b = [];
+            var j = 0;
+
+            this.$el.find(this.options.photo.item).each(function() {
+                self.queue.push(this);
+            });
+            this.$el.find(this.options.photo.item).on('load.gallery', function() {
+                self.loadQueueItem();
+            });
+
+            self.loadQueueItem();
+        },
+
+        loadQueueItem: function() {
+            var self = this;
+            if (self.queue.length > 0) {
+                var box = self.queue.shift();
+                var img = $(box).find('img');
+
+                $(img).attr('src', $(img).attr('data-src')).on('load error', function() {
+                    // Set image position and scale
+                    if ($(img).data('type') == 'photo') {
+                        self.setImageSize(this, 1, 5, self.options.imagePosition);
+                        //$(img).parent().hide();
+                    } else
+                        self.setImageSize(this, 1, 'out')
+                    // Remove loading class (fade in transition effect)
+                    $(box).removeClass('loading').addClass('loaded');
+                    // Start slideshow
+                    if (self.options.slideshow.status == 'start' && $(box).index() == 0 && $(img).data('type') == 'photo') {
+                        self.startSlideshow();
+                    }
+                    // Slideshow status = wait
+                    if (self.options.slideshow.status == 'wait' && $(box).index() > 0 && $(img).data('type') == 'photo') {
+                        self.options.slideshow.status = 'start';
+                        self.showImage($(box).index());
+                    }
+                    // Load next image
+                    $(box).trigger('load.gallery');
+                });
+            }
+        },
+
+        showImage: function(id) {
+            if (this.action == false) {
+                var self = this;
+                self.action = true;
+
+                var next = self.$el.find(self.options.photo.item).eq(id);
+                var curr = self.$el.find(self.options.photo.item + ':visible');
+
+                if (curr.index() != id && next.size() == 1) {
+                    if (next.is('.loading')) {
+                        // Find next photo in queue and move it to start queue
+                        var i = _.indexOf(self.queue, next[0]);
+                        var a = self.queue.slice(0, i)
+                        var b = self.queue.slice(i, i + 1)
+                        var c = self.queue.slice(i + 1)
+
+                        self.queue = _.union(b, a, c);
+                        i = a = b = c = undefined;
+                    }
+                    curr.fadeOut(self.options.photoEffectTime, function() {
+                        next.fadeIn(self.options.photoEffectTime, function() {
+                            if (self.options.slideshow.status == 'start') {
+                                self.startSlideshow();
+                            }
+                            self.action = false;
+                        }).trigger('render:show');
+                    });
+                } else {
+                    self.action = false;
+                }
+            }
+        },
+
+        /**
+         * img - image
+         * rate - image wrapper size rate
+         * type - in / out
+         */
+        setImageSize: function(img, rate, type) {
+            var ci = rate;
+            var cw = $(img).parent().data('width') / $(img).parent().data('height');
+
+            if (type == 'in') {
+                var c = (ci >= cw) ? 'h' : 'w';
+            } else {
+                var c = (ci >= cw) ? 'w' : 'h';
+            }
+            $(img).removeClass('w h').addClass(c);
+            if (type == 'out') {
+                if (c == 'w')
+                    $(img).width('100%');
+                else
+                    $(img).height('100%');
+            }
+
+            var ww = $(img).parent().width();
+            var hw = $(img).parent().height();
+            var vw = $(img).parent().is(':visible');
+
+            if (vw == false)
+                $(img).parent().css({
+                    'visible': 'hidden',
+                    'display': 'block'
+                });
+
+            var wi = $(img).width();
+            var hi = $(img).height();
+
+            if (vw == false)
+                $(img).parent().css({
+                    'visible': '',
+                    'display': 'none'
+                });
+
+            var mt = ml = 0
+            if (wi != ww) {
+                ml = parseInt((ww - wi) / 2);
+            }
+            if (hi != hw) {
+                mt = parseInt((hw - hi) / 2);
+            }
+            $(img).css({
+                'marginLeft': ml + 'px',
+                'marginTop': mt + 'px'
+            });
+        },
+
+        startSlideshow: function() {
+            var self = this;
+
+            self.options.slideshow.timer = setTimeout(function() {
+                self.nextSlideshow();
+            }, self.$el.data('slideshow-time'));
+        },
+
+        nextSlideshow: function() {
+
+            var self = this;
+
+            var curr = self.$el.find(self.options.photo.item + ':visible');
+            var next = self.$el.find(self.options.photo.item).eq(curr.index() + 1);
+
+            if (next.size() == 0) {
+                self.showImage(0);
+            } else if (next.is('.loaded')) {
+                self.showImage(curr.index() + 1);
+            } else {
+                self.options.slideshow.status = 'wait';
+            }
+        },
+
+        prevSlide: function() {
+            if (this.options.slideshow.status != 'stop') {
+                window.clearInterval(this.options.slideshow.timer);
+                this.options.slideshow.status = 'stop';
+            }
+            var id = this.$el.find(this.options.photo.item + ':visible').index();
+            id = (id == 0) ? this.$el.find(this.options.photo.item).size() - 1 : id - 1;
+            this.showImage(id);
+        },
+
+        nextSlide: function() {
+            if (this.options.slideshow.status != 'stop') {
+                window.clearInterval(this.options.slideshow.timer);
+                this.options.slideshow.status = 'stop';
+            }
+            var curr = this.$el.find(this.options.photo.item + ':visible');
+            var next = this.$el.find(this.options.photo.item).eq(curr.index() + 1);
+            if (next.size() == 0) {
+                this.showImage(0);
+            } else {
+                this.showImage(curr.index() + 1);
+            }
+        },
+
+        render: function() {
+            var self = this;
+            // Create queue
+            this.createQueue();
+
+            this.$el.find(this.options.photo.item).click(function() {
+                // Photo loaded yet
+                if ($(this).is('.loading') == false && $(this).data('link')) {
+                    window.open($(this).data('link'), '_blank');
+                }
+            });
+
+            return this;
+        }
+    });
+
+    return Gallery;
+});

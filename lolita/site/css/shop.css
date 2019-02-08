@@ -1,0 +1,91 @@
+.shop-products {}
+
+.shop-product .hide {
+    display: none;
+}
+
+/**
+* For Lolita
+*/
+
+.shop-products,
+.shop-product,
+.shop-cart {
+    margin: 0 auto;
+    max-width: 960px;
+    /*padding-left: 30px;
+    padding-right: 30px;*/
+}
+
+.shop-order {
+    max-width: none;
+}
+
+.shop-products,
+.shop-product {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.shop-product .selectbox select {
+    width: 220px;
+    background: #fff;
+}
+
+.shop-product .description h1 {
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.shop-cart {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.shop-cart .shop-cart-footer {
+    display: table;
+}
+
+.shop-order {
+    padding: 10% 22%;
+    box-sizing: border-box;
+}
+
+.shop-order-content {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.shop-basket {
+    vertical-align: middle;
+}
+
+/*mobile devices*/
+
+@media only screen and (max-width: 960px) {
+    .shop-products,
+    .shop-product,
+    .shop-cart {
+        width: auto
+    }
+    .shop-cart .shop-cart-footer {
+        display: table;
+    }
+}
+
+.shop-content-main {
+    margin: 0px 0px 0 145px;
+}
+
+.shop-menu.vertical {
+    margin-top: 0px;
+}
+
+@media only screen and (max-width: 420px) {
+    .shop-products,
+    .shop-product,
+    .shop-cart {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}

@@ -1,0 +1,285 @@
+#aside-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#aside-content .post {
+    border: 1px solid #c8c6c0;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+}
+
+#aside-content {
+    min-height: 400px;
+}
+
+#aside-content .aside-box {
+    min-height: 400px;
+    border: 1px solid #c8c6c0;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+#aside-content .aside-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+#aside-content .aside {
+    width: 200px;
+    float: left;
+}
+
+#aside-content .aside,
+#aside-content .constructor {
+    min-height: 200px;
+}
+
+#aside-content .placeholder-box {
+    background: rgba(0, 0, 0, 0) url(../images/aside/placeholder-post.png) no-repeat;
+    float: right;
+    position: relative;
+    top: 15px;
+    width: 513px;
+}
+
+#aside-content .placeholder-box .placeholder {
+    height: 700px;
+}
+
+#aside-content .aside-box.right .aside {
+    float: right;
+}
+
+#aside-content .aside-box.right .placeholder-box {
+    background-position-x: 100%;
+    float: left;
+    left: -15px;
+}
+
+#constructor {
+    min-height: 400px;
+}
+
+#constructor .placeholder {
+    font-size: 18px;
+    text-align: center;
+    background: #f9f4eb;
+    padding-bottom: 40px;
+}
+
+#constructor .placeholder img {
+    margin: 40px 0px 20px;
+    text-align: center;
+}
+
+#constructor .element-box {
+    border: 2px solid rgba(0, 0, 0, 0);
+    position: relative;
+}
+
+#constructor .element-box .element {
+    /* padding: 15px; */
+}
+
+#constructor .element-box.new {
+    background-color: #f9f4eb;
+}
+
+#constructor .element-box.hover,
+.active_sect {
+    border: 2px solid #d07058;
+}
+
+/* Widgets */
+
+/* Aside text */
+
+.aside-instagram-type {
+    overflow: hidden;
+}
+
+#constructor .aside-text .text-box {
+    margin: 0px auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+#constructor .aside-instagram .instagram-box {
+    margin: 0px auto;
+}
+
+#constructor .aside-instagram .instagram-box div.text {
+    margin: 0px auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+/* Sliseshow */
+
+.aside-instagram.element .photo-box {
+    float: left;
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.aside-instagram.element .photo-box .image {
+    height: 100%;
+    width: 100%;
+}
+
+.aside-instagram.element .photo-box .image.loaded {
+    cursor: pointer;
+}
+
+.aside-instagram.element .photo-box .image img {
+    -webkit-transition: opacity .4s ease-out;
+    -moz-transition: opacity .4s ease-out;
+    -o-transition: opacity .4s ease-out;
+    transition: opacity .4s ease-out;
+}
+
+.aside-instagram.element .photo-box .image.loading img {
+    opacity: 0
+}
+
+.aside-instagram.element .photo-box .image.loaded img {
+    opacity: 1;
+}
+
+.aside-instagram.element .image.loaded:hover,
+.aside-instagram.element .static-grid-cell .image:hover {
+    opacity: 0.7 !important;
+}
+
+.aside-instagram.element .photo-box .image img.w,
+.aside-instagram.element .preview-box .preview img.w {
+    max-width: 100%
+}
+
+.aside-instagram.element .photo-box .image img.h,
+.aside-instagram.element .preview-box .preview img.h {
+    max-height: 100%
+}
+
+.aside-instagram.element .photo-box .photo-box-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+}
+
+/* Grid */
+
+.aside-instagram.element .static-grid {
+    position: relative;
+    visibility: hidden;
+    width: 100%;
+}
+
+.aside-instagram.element .static-grid:after {
+    clear: both;
+}
+
+/* Grid cell */
+
+.aside-instagram.element .static-grid .static-grid-item {
+    float: left;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    clear: none;
+}
+
+.aside-instagram.element .static-grid .static-grid-item .static-grid-cell {
+    position: relative;
+    height: 100%;
+    margin: 0px;
+}
+
+/* Image */
+
+.aside-instagram.element .static-grid .static-grid-item .static-grid-cell .image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.aside-instagram.element .static-grid .static-grid-item .static-grid-cell .image.h img.w,
+.aside-instagram.element .static-grid .static-grid-item .static-grid-cell .image.w img.w {
+    max-width: 100%
+}
+
+.aside-instagram.element .static-grid .static-grid-item .static-grid-cell .image.h img.h,
+.aside-instagram.element .static-grid .static-grid-item .static-grid-cell .image.w img.h {
+    max-height: 100%
+}
+
+.aside-instagram.element .static-grid-cell .image img {
+    opacity: 0;
+}
+
+.aside-instagram.element .static-grid-cell .image img.loaded {
+    opacity: 1;
+    -webkit-transition: opacity .4s ease-out;
+    -moz-transition: opacity .4s ease-out;
+    -o-transition: opacity .4s ease-out;
+    transition: opacity .4s ease-out;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    cursor: pointer;
+}
+
+/* Grid width */
+
+.aside-instagram.element .static-grid.c1 .static-grid-item {
+    width: 100% !important
+}
+
+.aside-instagram.element .static-grid.c2 .static-grid-item {
+    width: 50% !important
+}
+
+.aside-instagram.element .static-grid.c3 .static-grid-item {
+    width: 33.3333% !important
+}
+
+.aside-instagram.element .static-grid.c4 .static-grid-item {
+    width: 25% !important
+}
+
+.aside-instagram.element .static-grid.c5 .static-grid-item {
+    width: 20% !important
+}
+
+.aside-instagram.element .static-grid.c6 .static-grid-item {
+    width: 16.6666% !important
+}
+
+.aside-instagram.element .static-grid.c7 .static-grid-item {
+    width: 14.2857% !important
+}
+
+.aside-instagram.element .static-grid.c8 .static-grid-item {
+    width: 12.5% !important
+}
+
+.aside-instagram.element .static-grid.c9 .static-grid-item {
+    width: 11.1111% !important
+}
+
+.aside-instagram.element .static-grid.c10 .static-grid-item {
+    width: 10% !important
+}
+
+.aside-instagram.element .static-grid .static-grid-clearfix {
+    clear: both;
+}

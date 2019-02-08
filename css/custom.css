@@ -1,0 +1,649 @@
+body {
+    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1);
+    font-family: 'Verdana';
+    font-size: 14px;
+}
+
+.blog-layout-1 .feedWrap span.bgi_date:after,
+.blog-layout-1 .feedWrap:after {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.gphw-calendar-tooltip,
+.gphw-calendar-tooltip .date,
+#gphw-calendar .gphw-week,
+#gphw-calendar .gphw-day-label,
+#gphw-calendar .gphw-title-month,
+#gphw-calendar .gphw-title-year,
+#gphw-calendar .gphw-p,
+#gphw-calendar .gphw-calendar-dates .gphw-cell {
+    font-family: 'Verdana' !important;
+}
+
+.container {
+    max-width: 1260px
+}
+
+.f-text,
+.f-textarea,
+section.contact,
+section.contact input,
+section.contact textarea {
+    font-family: 'Verdana';
+}
+
+section.privatepage form .button,
+section.contact form .button,
+.testimonials-form .button {
+    font-family: 'Verdana' !important;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px -1px 0px 0px #e1e1e1 inset
+}
+
+footer {
+    background-color: #353535;
+    border-top-color: #b39a9a;
+}
+
+header .top-pane .langs-pane a {
+    color: #b3b3b3
+}
+
+header .top-pane .langs-pane a:hover {
+    color: #ffffff
+}
+
+section,
+section a {
+    color: #5e5e5e;
+}
+
+.logo-text a {
+    font-family: 'Ubuntu Condensed';
+    color: rgba(0, 0, 0, 1);
+    font-size: 46px;
+    line-height: 46px;
+}
+
+.logo-text {
+    height: 46px;
+}
+
+.top-gallery .lenta .lenta-next .arrow,
+.top-gallery .lenta .lenta-prev .arrow {
+    stroke: #424242;
+}
+
+.page.desktop .top-gallery .lenta .lenta-next:hover .arrow,
+.page.desktop .top-gallery .lenta .lenta-prev:hover .arrow {
+    stroke: #a6a6a6;
+}
+
+.top-gallery .lenta-switcher i circle.circle {
+    fill: #c9c9c9;
+}
+
+.desktop .top-gallery .lenta-switcher i:hover circle.circle,
+.top-gallery .lenta-switcher i.active circle.circle {
+    fill: #f5bf29;
+}
+
+.social-icons .social-icon-box {
+    padding: 2px;
+}
+
+.social-icons .social-icon-box,
+.social-icons .social-icon-box a,
+.social-icons .social-icon-box i {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.social-icons .social-icon-box i {
+    color: #707070;
+}
+
+.social-icons .social-icon-box i:hover {
+    color: #a8a8a8;
+}
+
+.social-icons [class^="icon-"]:before,
+.social-icons [class*=" icon-"]:before {
+    margin: 0px;
+}
+
+.copyright,
+.copyright a,
+.copyright a:hover {
+    color: #b0b0b0;
+    font-size: 10px;
+}
+
+.static-grid .static-grid-item .static-grid-cell .description .cell .middle>h2,
+.galcategory .description>h2 {
+    color: #474747;
+    font-size: 14px;
+}
+
+section.gallery .container .desc,
+.galcategory .description>div,
+.galcategory .text,
+.static-grid .static-grid-item .static-grid-cell .description .cell .middle>.short-description {
+    color: #adadad;
+    font-size: 11px;
+}
+
+#fsbox-close path {
+    fill: #424242;
+    stroke: #424242;
+}
+
+#fsbox-close:hover path {
+    fill: #a8a8a8;
+    stroke: #a8a8a8;
+}
+
+#fsbox-next path,
+#fsbox-prev path {
+    fill: #3b3b3b;
+}
+
+#fsbox-next:hover path,
+#fsbox-prev:hover path {
+    fill: #adadad;
+}
+
+.fsbox {
+    background-color: #ffffff;
+}
+
+header nav.menu .menu-item a {
+    font-family: 'Verdana';
+    font-size: 12px;
+    color: #a89e9e;
+}
+
+header nav.menu .menu-item .shop-basket {
+    font-size: 23px;
+}
+
+header nav.menu .menu-item a:hover,
+header nav.menu .menu-item.active a {
+    color: #474545;
+}
+
+header nav.menu .menu-item.separator a {
+    color: #a89e9e;
+}
+
+header>.sub-menu li a,
+header>.sub-menu>.menu-item ul {
+    font-family: 'Verdana';
+    font-size: 11px;
+    color: #8a8888;
+}
+
+header>.sub-menu li a:hover,
+header>.sub-menu li.active a {
+    color: #424242;
+}
+
+header>.sub-menu {
+    background: #f5f5f5
+}
+
+section.contact .columns input,
+section.contact .columns textarea,
+section.private-page input,
+.testimonials-form input[type=text],
+.testimonials-form textarea,
+section.contact .form textarea,
+section.contact input {
+    color: #6b6b6b;
+    background: #e3e3e3;
+}
+
+section.contact form .button.large,
+.testimonials-form .button.large {
+    color: #a6a6a6;
+}
+
+body.desktop section.contact form .button.large:hover,
+.testimonials-form .button.large:hover {
+    color: #d1d1d1;
+}
+
+body.desktop section.contact form .button.large:hover,
+.testimonials-form .button.large:hover {
+    background: #404040;
+}
+
+section.contact form .button.large,
+.testimonials-form .button.large {
+    background: #333333;
+}
+
+.news .title a,
+.news h2 {
+    color: #303030;
+    font-size: 15px;
+}
+
+body .news .date {
+    color: #cccccc;
+}
+
+body .news .row,
+body .news .pagination {
+    border-color: #dedede;
+}
+
+.lnk-more-container a {
+    color: #bababa;
+}
+
+body .news .pagination a,
+body .news .pagination {
+    color: #b8b8b8;
+}
+
+body .news .pagination a:hover {
+    color: #ebebeb;
+}
+
+section.testimonials .testimonial h2.title {
+    font-size: 17px;
+    color: #c2bebe;
+}
+
+section.testimonials .testimonial .text {
+    color: #858282;
+}
+
+section.testimonials a.testimonials-form-link {
+    font-size: 13px;
+    color: #919191;
+}
+
+section.testimonials a.testimonials-form-link:hover {
+    color: #b0b0b0;
+}
+
+.right-panel .scroll-top-btn {
+    background: #3d3c39;
+}
+
+.right-panel .scroll-top-btn:hover {
+    background: #e0b02a;
+}
+
+.right-panel .scroll-top-btn .ico-open {
+    color: #ffffff;
+}
+
+.right-panel .scroll-top-btn .ico-open:hover {
+    color: #ffffff;
+}
+
+/*
+ * @begin blog
+ */
+
+/*start blogPagePost */
+
+.blog-content .items article.post {
+    background: #ffffff;
+    border-color: #ffffff;
+    border-width: 0px;
+    padding: 43px 30px;
+}
+
+.blog-content article.post hr,
+.blog-content .post-pagination {
+    border-bottom-color: #000000;
+}
+
+.blog-content article.post .share-links ul {
+    border-color: #000000 !important;
+}
+
+.blog-content .items article.post ul.tags,
+.blog-content .items article.post ul.tags a,
+.blog-content .items article.post ul.tools,
+.blog-content .items article.post ul.tools a,
+.blog-content article.post .share-links li a,
+.blog-content ul.tools>li.share-links>ul {
+    color: #A8A5A5 !important;
+}
+
+.blog-content .items article.post ul svg path,
+.blog-content .items article.post .share-links ul svg path {
+    stroke: #A8A5A5;
+}
+
+.blog-content div.tools span.field a.like svg path,
+.blog-mobile div.tools span.field>.bgi_triggerTip svg path,
+.blog-mobile div.tools span.field a.like svg path {
+    fill: #A8A5A5;
+    /* page post */
+}
+
+.blog-mobile div.tools span.field a.like span {
+    color: #A8A5A5;
+}
+
+.blog-content .items article.post ul .like.checked svg path,
+.blog-content .items article.post .share-links ul .like.checked svg path {
+    fill: #A8A5A5;
+}
+
+.blog-content article.post .share-links li {
+    border-right-color: #A8A5A5;
+}
+
+.blog-content .items article.post .paging li a,
+.blog-content .items article.post .posts-paging li a,
+.blog-content .items article.post .posts-paging li .last-post,
+.blog-content .items article.post ul.posts-paging .paging-separator {
+    color: #A8A5A5 !important;
+}
+
+.blog-content .items article.post .paging li svg path {
+    stroke: #A8A5A5;
+}
+
+.blog-content .items article.post .posts-paging li svg path {
+    fill: #A8A5A5;
+}
+
+.blog-content .items article.post header h2 a {
+    font-family: 'Verdana';
+    font-size: 28px !important;
+    color: #000000 !important;
+}
+
+.blog-content .items article.post header .date {
+    font-family: 'Verdana';
+    font-size: 11px !important;
+    color: #A8A5A5;
+}
+
+.blog-content .items article.post header .view1 .date:before,
+.blog-content .items article.post header .view1 .date:after,
+.blog-content .items article.post header .view7 h2:before,
+.blog-content .items article.post header .view7 h2:after {
+    background: #A8A5A5;
+}
+
+.blog-content .items article.post header .view6 h2 a span {
+    border-color: #A8A5A5;
+}
+
+.blog-content:not(.composite-content).blog-type-post .items article.post .text-box,
+.blog-sidebar-box .blog-sidebar .aside .widget .text-box,
+.blog-content:not(.composite-content).blog-mobile .items article.post .text-box {
+    color: #000000 !important;
+    font-size: 14px !important;
+    line-height: 1.3;
+    margin-top: -3px;
+    margin-bottom: -1px;
+    font-family: 'Verdana';
+}
+
+.blog-content:not(.composite-content) .items article.post .text-box.nocolumns {
+    color: #000000 !important;
+}
+
+/*end blogPagePost */
+
+/*start blogDesignPreview */
+
+.feedWrap span.bgi_date {
+    font-size: 12px !important;
+    font-family: 'Verdana' !important;
+    color: #292929 !important;
+}
+
+.feedWrap h2 {
+    font-size: 20px !important;
+    font-family: 'Verdana' !important;
+    color: #292929 !important;
+}
+
+.feedWrap span.bgi_action_hold svg path,
+.blog-content.blog-type-classic .items .feedWrap .tools span.field svg path {
+    fill: #4a4444 !important;
+}
+
+.feedWrap span.bgi_action_hold a span,
+.blog-content.blog-type-classic .items .feedWrap .tools a span {
+    color: #4a4444 !important;
+}
+
+.feedWrap span.bgi_tag a,
+.feedWrap .bgi_description .bgi_tag a {
+    font-size: 11px !important;
+    font-family: 'Verdana' !important;
+    color: #A8A5A5 !important;
+}
+
+.blog-layout-6 .feedWrap span.bgi_date {
+    font-size: 11px !important;
+    font-family: 'Verdana' !important;
+    color: #A8A5A5 !important;
+}
+
+.blog-layout-4 .feedWrap span.bgi_date {
+    font-size: 11px !important;
+    font-family: 'Verdana' !important;
+    color: #A8A5A5 !important;
+}
+
+.feedWrap .blog_grid_item:after {
+    background: #000000 !important;
+}
+
+.blog-layout-4 .feedWrap .blog_grid_item {
+    border-color: #000000 !important;
+}
+
+.blog-layout-10 .feedWrap .blog_grid_item.type_1,
+.blog-layout-10 .feedWrap .blog_grid_item.type_5,
+.blog-layout-10 .feedWrap .blog_grid_item.type_3,
+.blog-layout-10 .feedWrap .blog_grid_item.type_6,
+.feedWrap:not(.mid) .blog_grid_item.sided div.bgi_description:after {
+    border-color: #000000 !important;
+}
+
+.feedWrap.mid .blog_grid_item.sided div.bgi_description:before,
+.feedWrap.mid .blog_grid_item.sided div.bgi_description:after,
+.feedWrap .blog_grid_item.centered .bgi_description:before,
+.feedWrap .blog_grid_item.centered .bgi_description:after {
+    background: #000000 !important;
+}
+
+#liner {
+    color: #000000;
+}
+
+.bgi_fields.readMore a {
+    font-size: 10px !important;
+    font-family: 'Verdana' !important;
+    color: #474747 !important;
+}
+
+.feedWrap a.btnRect {
+    font-size: 12px !important;
+    font-family: 'Verdana' !important;
+    color: #ffffff !important;
+    background: #292929 !important;
+}
+
+.blog-layout-7 .feedWrap .bgi_imageHold,
+.blog-layout-7 .feedWrap .blog_grid_item,
+.blog-layout-7 .feedWrap .bgi_description,
+.blog-layout-7 .feedWrap .bgi_date {
+    background-color: #fafafa !important;
+}
+
+.blog-content .paging li a,
+.blog-content .posts-paging li a,
+.blog-content .posts-paging li .last-post,
+.blog-content ul.posts-paging .paging-separator {
+    color: #736d6d !important;
+}
+
+.blog-content .paging li svg path,
+.blog-content .posts-paging li svg path {
+    stroke: #736d6d;
+}
+
+.blog-content .blog-sidebar {
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.feedWrap .bgi_description p,
+.feedWrap .blog_grid_item .bgi_textWrap,
+.feedWrap .blog_grid_item p,
+.feedWrap .bgi_description .preview-desc {
+    font-family: 'Verdana' !important;
+    font-size: 11px !important;
+    color: #a89e9e !important;
+}
+
+.blog-layout-9 #iso_grid {
+    background: #fafafa;
+}
+
+.blog-layout-5 .feedWrap .blog_grid_item.clearfix {
+    margin-top: 37px
+}
+
+.blog-layout-5 .feedWrap .blog_grid_item .place {
+    background-color: #000000 !important;
+    opacity: 0.09999999999999998 !important;
+}
+
+/*end blogDesignPreview */
+
+/*start blogDesign */
+
+.blog-content.blog-type-classic .items article {
+    background: inherit;
+    border-width: 0px;
+}
+
+.blog-content.blog-type-classic ul.tools>li.share-links>ul {
+    background: post-bg-site;
+}
+
+.blog-content.blog-type-classic .blog-sidebar {
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.blog-content.blog-type-classic article hr,
+.blog-content.blog-type-classic .post-pagination {
+    border-bottom-color: rgba(255, 255, 255, 1);
+}
+
+.blog-content.blog-type-classic article .share-links ul {
+    border-color: rgba(255, 255, 255, 1) !important;
+}
+
+.blog-content.blog-type-classic .items article .tools .field span {
+    color: #adadad;
+}
+
+.blog-content.blog-type-classic .items article .tools .field svg path {
+    fill: #adadad;
+}
+
+.blog-content.blog-type-classic .items article .tools .field .like.checked svg path {
+    fill: #adadad;
+}
+
+.blog-content.blog-type-classic .items article .tools .field .bgi_toolTip a {
+    color: #adadad;
+}
+
+.blog-content.blog-type-classic .items article .tools .field .bgi_toolTip {
+    border-color: #adadad;
+}
+
+.blog-content.blog-type-classic .paging li a,
+.blog-content.blog-type-classic .posts-paging li a,
+.blog-content.blog-type-classic .posts-paging li .last-post,
+.blog-content.blog-type-classic ul.posts-paging .paging-separator {
+    color: #adadad;
+}
+
+.blog-content.blog-type-classic .paging li svg path,
+.blog-content.blog-type-classic .posts-paging li svg path {
+    stroke: #adadad;
+}
+
+.blog-content.blog-type-classic .items article header h2 a {
+    font-family: 'Verdana';
+    font-size: 22px !important;
+    color: #303030;
+}
+
+.blog-content.blog-type-classic .items article header .date {
+    font-family: 'Verdana';
+    font-size: 12px !important;
+    color: #cccccc;
+}
+
+.blog-content.blog-type-classic .items article header .view1 .date:before,
+.blog-content.blog-type-classic .items article header .view1 .date:after,
+.blog-content.blog-type-classic .items article header .view7 h2:before,
+.blog-content.blog-type-classic .items article header .view7 h2:after {
+    background: #cccccc;
+}
+
+.blog-content.blog-type-classic .items article header .view6 h2 a span {
+    border-color: #cccccc;
+}
+
+.blog-content.blog-type-classic .items article .post-body .text-box {
+    color: #807c7c;
+    font-size: 13px;
+}
+
+.blog-content.blog-type-classic .items article ul.tags li a,
+.blog-content.blog-type-classic .items article ul.tags li:after {
+    color: #adadad;
+    font-size: 13px;
+}
+
+/*end blogDesign */
+
+/*start blogTags */
+
+.blog-content ul.tags-top {
+    text-align: center;
+}
+
+.blog-content ul.tags-top li a {
+    color: #bababa !important;
+    font-family: 'Verdana';
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.blog-content ul.tags-top li a:hover,
+.blog-content ul.tags-top li.active a {
+    color: #787676 !important;
+}
+
+/*end blogTags */
+
+/*
+ * @end blog
+ */

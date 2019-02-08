@@ -1,0 +1,362 @@
+@font-face {
+    font-family: 'social-icons-v2';
+    src: url('../fonts/social-icons-v2.eot?125815597');
+    src: url('../fonts/social-icons-v2.eot?125815597#iefix') format('embedded-opentype'), url('../fonts/social-icons-v2.woff?125815597') format('woff'), url('../fonts/social-icons-v2.ttf?125815597') format('truetype'), url('../fonts/social-icons-v2.svg?125815597#social-icons-v2') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'social-icons-v2';
+    src: url('../font/social-icons-v2.svg?25815597#social-icons-v2') format('svg');
+  }
+}
+*/
+
+.aside-social-icons i,
+.aside-social-icons>label,
+.widget-social-icons i,
+.widget-social-icons>label,
+.setting-social-icons i,
+.setting-social-icons>label {
+    font-family: 'social-icons-v2';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.widget-social-icon-500px-circle:before {
+    content: '\e800';
+}
+
+/* '' */
+
+.widget-social-icon-500px-rounded:before {
+    content: '\e801';
+}
+
+/* '' */
+
+.widget-social-icon-500px:before {
+    content: '\e802';
+}
+
+/* '' */
+
+.widget-social-icon-behance-circle:before {
+    content: '\e803';
+}
+
+/* '' */
+
+.widget-social-icon-behance-rounded:before {
+    content: '\e804';
+}
+
+/* '' */
+
+.widget-social-icon-behance:before {
+    content: '\e805';
+}
+
+/* '' */
+
+.widget-social-icon-blogspot-circle:before {
+    content: '\e806';
+}
+
+/* '' */
+
+.widget-social-icon-blogspot-rounded:before {
+    content: '\e807';
+}
+
+/* '' */
+
+.widget-social-icon-blogspot:before {
+    content: '\e808';
+}
+
+/* '' */
+
+.widget-social-icon-dribbble-circle:before {
+    content: '\e809';
+}
+
+/* '' */
+
+.widget-social-icon-dribbble-rounded:before {
+    content: '\e80a';
+}
+
+/* '' */
+
+.widget-social-icon-dribbble:before {
+    content: '\e80b';
+}
+
+/* '' */
+
+.widget-social-icon-facebook-circle:before {
+    content: '\e80c';
+}
+
+/* '' */
+
+.widget-social-icon-facebook-rounded:before {
+    content: '\e80d';
+}
+
+/* '' */
+
+.widget-social-icon-facebook:before {
+    content: '\e80e';
+}
+
+/* '' */
+
+.widget-social-icon-flickr-circle:before {
+    content: '\e80f';
+}
+
+/* '' */
+
+.widget-social-icon-flickr-rounded:before {
+    content: '\e810';
+}
+
+/* '' */
+
+.widget-social-icon-flickr:before {
+    content: '\e811';
+}
+
+/* '' */
+
+.widget-social-icon-gplus-circle:before {
+    content: '\e812';
+}
+
+/* '' */
+
+.widget-social-icon-gplus-rounded:before {
+    content: '\e813';
+}
+
+/* '' */
+
+.widget-social-icon-tumblr-circle:before {
+    content: '\e814';
+}
+
+/* '' */
+
+.widget-social-icon-pinterest:before {
+    content: '\e815';
+}
+
+/* '' */
+
+.widget-social-icon-pinterest-rounded:before {
+    content: '\e816';
+}
+
+/* '' */
+
+.widget-social-icon-pinterest-circle:before {
+    content: '\e817';
+}
+
+/* '' */
+
+.widget-social-icon-odnoklassniki:before {
+    content: '\e818';
+}
+
+/* '' */
+
+.widget-social-icon-odnoklassniki-rounded:before {
+    content: '\e819';
+}
+
+/* '' */
+
+.widget-social-icon-odnoklassniki-circle:before {
+    content: '\e81a';
+}
+
+/* '' */
+
+.widget-social-icon-mywed:before {
+    content: '\e81b';
+}
+
+/* '' */
+
+.widget-social-icon-mywed-rounded:before {
+    content: '\e81c';
+}
+
+/* '' */
+
+.widget-social-icon-mywed-circle:before {
+    content: '\e81d';
+}
+
+/* '' */
+
+.widget-social-icon-livejournal:before {
+    content: '\e81e';
+}
+
+/* '' */
+
+.widget-social-icon-livejournal-rounded:before {
+    content: '\e81f';
+}
+
+/* '' */
+
+.widget-social-icon-livejournal-circle:before {
+    content: '\e820';
+}
+
+/* '' */
+
+.widget-social-icon-linkedin:before {
+    content: '\e821';
+}
+
+/* '' */
+
+.widget-social-icon-linkedin-rounded:before {
+    content: '\e822';
+}
+
+/* '' */
+
+.widget-social-icon-linkedin-circle:before {
+    content: '\e823';
+}
+
+/* '' */
+
+.widget-social-icon-instagram:before {
+    content: '\e824';
+}
+
+/* '' */
+
+.widget-social-icon-instagram-rounded:before {
+    content: '\e825';
+}
+
+/* '' */
+
+.widget-social-icon-instagram-circle:before {
+    content: '\e826';
+}
+
+/* '' */
+
+.widget-social-icon-gplus:before {
+    content: '\e827';
+}
+
+/* '' */
+
+.widget-social-icon-tumblr-rounded:before {
+    content: '\e828';
+}
+
+/* '' */
+
+.widget-social-icon-tumblr:before {
+    content: '\e829';
+}
+
+/* '' */
+
+.widget-social-icon-twitter-circle:before {
+    content: '\e82a';
+}
+
+/* '' */
+
+.widget-social-icon-twitter-rounded:before {
+    content: '\e82b';
+}
+
+/* '' */
+
+.widget-social-icon-twitter:before {
+    content: '\e82c';
+}
+
+/* '' */
+
+.widget-social-icon-vimeo-circle:before {
+    content: '\e82d';
+}
+
+/* '' */
+
+.widget-social-icon-vimeo-rounded:before {
+    content: '\e82e';
+}
+
+/* '' */
+
+.widget-social-icon-vkontakte-circle:before {
+    content: '\e82f';
+}
+
+/* '' */
+
+.widget-social-icon-vkontakte-rounded:before {
+    content: '\e830';
+}
+
+/* '' */
+
+.widget-social-icon-vkontakte:before {
+    content: '\e831';
+}
+
+/* '' */
+
+.widget-social-icon-youtube-circle:before {
+    content: '\e832';
+}
+
+/* '' */
+
+.widget-social-icon-youtube-rounded:before {
+    content: '\e833';
+}
+
+/* '' */
+
+.widget-social-icon-youtube:before {
+    content: '\e834';
+}
+
+/* '' */
+
+.widget-social-icon-vimeo:before {
+    content: '\e835';
+}
+
+/* '' */
