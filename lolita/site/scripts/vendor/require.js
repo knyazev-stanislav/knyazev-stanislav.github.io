@@ -1,7 +1,7 @@
 /*
  RequireJS 2.1.2 Copyright (c) 2010-2012, The Dojo Foundation All Rights Reserved.
  Available via the MIT or new BSD license.
- see: http://github.com/jrburke/requirejs for details
+ see: https://github.com/jrburke/requirejs for details
 */
 var requirejs, require, define;
 (function(Y) {
@@ -64,7 +64,7 @@ var requirejs, require, define;
     }
 
     function J(b, c, d, i) {
-        c = Error(c + "\nhttp://requirejs.org/docs/errors.html#" + b);
+        c = Error(c + "\nhttps://requirejs.org/docs/errors.html#" + b);
         c.requireType = b;
         c.requireModules = i;
         d && (c.originalError = d);
@@ -704,7 +704,7 @@ var requirejs, require, define;
         l.load = function(b, c, d) {
             var i = b && b.config || {},
                 f;
-            if (z) return f = i.xhtml ? document.createElementNS("http://www.w3.org/1999/xhtml", "html:script") : document.createElement("script"), f.type = i.scriptType || "text/javascript", f.charset = "utf-8", f.async = !0, f.setAttribute("data-requirecontext", b.contextName), f.setAttribute("data-requiremodule", c), f.attachEvent && !(f.attachEvent.toString && 0 > f.attachEvent.toString().indexOf("[native code")) && !V ? (O = !0, f.attachEvent("onreadystatechange",
+            if (z) return f = i.xhtml ? document.createElementNS("https://www.w3.org/1999/xhtml", "html:script") : document.createElement("script"), f.type = i.scriptType || "text/javascript", f.charset = "utf-8", f.async = !0, f.setAttribute("data-requirecontext", b.contextName), f.setAttribute("data-requiremodule", c), f.attachEvent && !(f.attachEvent.toString && 0 > f.attachEvent.toString().indexOf("[native code")) && !V ? (O = !0, f.attachEvent("onreadystatechange",
                 b.onScriptLoad)) : (f.addEventListener("load", b.onScriptLoad, !1), f.addEventListener("error", b.onScriptError, !1)), f.src = d, K = f, D ? A.insertBefore(f, D) : A.appendChild(f), K = null, f;
             $ && (importScripts(d), b.completeLoad(c))
         };

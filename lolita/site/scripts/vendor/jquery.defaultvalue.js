@@ -7,9 +7,9 @@
  *	@author							Jan Jarfalk
  *	@author-email					jan.jarfalk@unwrongest.com
  *	@author-twitter					janjarfalk
- *	@author-website					http://www.unwrongest.com
+ *	@author-website					https://www.unwrongest.com
  *
- *	@licens							MIT License - http://www.opensource.org/licenses/mit-license.php
+ *	@licens							MIT License - https://www.opensource.org/licenses/mit-license.php
  *
  *	@param {Function} callback		Callback function
  */

@@ -234,7 +234,7 @@ header.default .container {
 header.layout-logo-center .inner>div.logo,
 header.layout-logo-center .inner>nav.menu {
     font-size: 0;
-    /* http://css-tricks.com/fighting-the-space-between-inline-block-elements/ */
+    /* https://css-tricks.com/fighting-the-space-between-inline-block-elements/ */
 }
 
 header.layout-logo-center .inner>div.logo {

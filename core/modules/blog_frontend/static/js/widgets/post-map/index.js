@@ -2,7 +2,7 @@ define([
 
     'backbone',
     'module-blog-frontend-static/widgets/post-map/model',
-    'http://maps.googleapis.com/maps/api/js?key=AIzaSyAlb21YToNOBTdDpv1ozMIwvPIElV3JoU0&libraries=places'
+    'https://maps.googleapis.com/maps/api/js?key=AIzaSyAlb21YToNOBTdDpv1ozMIwvPIElV3JoU0&libraries=places'
 
 ], function(Backbone, WidgetMapModel) {
 
@@ -146,7 +146,7 @@ define([
             var marker = new google.maps.Marker({
                 map: map,
                 icon: {
-                    url: 'data:image/svg+xml;utf-8, ' + encodeURIComponent('<svg width="22" height="34" viewBox="-1 -1 22 34" xmlns="http://www.w3.org/2000/svg"><path fill="' + this.model.get('color') + '" stroke="' + this.model.get('color') + '" stroke-width="1" d="' + this.iconImage + '" ></path></svg>')
+                    url: 'data:image/svg+xml;utf-8, ' + encodeURIComponent('<svg width="22" height="34" viewBox="-1 -1 22 34" xmlns="https://www.w3.org/2000/svg"><path fill="' + this.model.get('color') + '" stroke="' + this.model.get('color') + '" stroke-width="1" d="' + this.iconImage + '" ></path></svg>')
                 }
             });
 

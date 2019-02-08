@@ -1,10 +1,10 @@
 // ┌────────────────────────────────────────────────────────────────────┐ \\
 // │ Raphaël 2.1.0 - JavaScript Vector Library                          │ \\
 // ├────────────────────────────────────────────────────────────────────┤ \\
-// │ Copyright © 2008-2012 Dmitry Baranovskiy (http://raphaeljs.com)    │ \\
-// │ Copyright © 2008-2012 Sencha Labs (http://sencha.com)              │ \\
+// │ Copyright © 2008-2012 Dmitry Baranovskiy (https://raphaeljs.com)    │ \\
+// │ Copyright © 2008-2012 Sencha Labs (https://sencha.com)              │ \\
 // ├────────────────────────────────────────────────────────────────────┤ \\
-// │ Licensed under the MIT (http://raphaeljs.com/license.html) license.│ \\
+// │ Licensed under the MIT (https://raphaeljs.com/license.html) license.│ \\
 // └────────────────────────────────────────────────────────────────────┘ \\
 (function(t) {
     var e, r, i = "0.4.2",
@@ -559,7 +559,7 @@ function(t, e) {
             "font-weight": 400,
             gradient: 0,
             height: 0,
-            href: "http://raphaeljs.com/",
+            href: "https://raphaeljs.com/",
             "letter-spacing": 0,
             opacity: 1,
             path: "M0,0",
@@ -686,7 +686,7 @@ function(t, e) {
                 for (l = t[n], a = 1, o = l.length; o > a; a += 2) r = e.x(l[a], l[a + 1]), i = e.y(l[a], l[a + 1]), l[a] = r, l[a + 1] = i;
             return t
         };
-    if (r._g = S, r.type = S.win.SVGAngle || S.doc.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1") ? "SVG" : "VML", "VML" == r.type) {
+    if (r._g = S, r.type = S.win.SVGAngle || S.doc.implementation.hasFeature("https://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1") ? "SVG" : "VML", "VML" == r.type) {
         var ye, me = S.doc.createElement("div");
         if (me.innerHTML = '<v:shape adj="1"/>', ye = me.firstChild, ye.style.behavior = "url(#default#VML)", !ye || "object" != typeof ye.adj) return r.type = M;
         me = null
@@ -2170,7 +2170,7 @@ function(t, e) {
                     u = r.eve,
                     c = "",
                     f = " ",
-                    p = "http://www.w3.org/1999/xlink",
+                    p = "https://www.w3.org/1999/xlink",
                     d = {
                         block: "M5,0 0,2.5 5,5z",
                         classic: "M5,0 0,2.5 5,5 3.5,3 3.5,2z",
@@ -2186,7 +2186,7 @@ function(t, e) {
                         if (n) {
                             "string" == typeof i && (i = x(i));
                             for (var a in n) n[t](a) && ("xlink:" == a.substring(0, 6) ? i.setAttributeNS(p, a.substring(6), e(n[a])) : i.setAttribute(a, e(n[a])))
-                        } else i = r._g.doc.createElementNS("http://www.w3.org/2000/svg", i), i.style && (i.style.webkitTapHighlightColor = "rgba(0,0,0,0)");
+                        } else i = r._g.doc.createElementNS("https://www.w3.org/2000/svg", i), i.style && (i.style.webkitTapHighlightColor = "rgba(0,0,0,0)");
                         return i
                     },
                     v = function(t, n) {
@@ -2768,7 +2768,7 @@ function(t, e) {
                         height: s,
                         version: 1.1,
                         width: a,
-                        xmlns: "http://www.w3.org/2000/svg"
+                        xmlns: "https://www.w3.org/2000/svg"
                     }), 1 == e ? (l.style.cssText = h + "position:absolute;left:" + i + "px;top:" + n + "px", r._g.doc.body.appendChild(l), o = 1) : (l.style.cssText = h + "position:relative", e.firstChild ? e.insertBefore(l, e.firstChild) : e.appendChild(l)), e = new r._Paper, e.width = a, e.height = s, e.canvas = l, e.clear(), e._left = e._top = 0, o && (e.renderfix = function() {}), e.renderfix(), e
                 }, r._engine.setViewBox = function(t, e, r, i, n) {
                     u("raphael.setViewBox", this, this._viewBox, [t, e, r, i, n]);

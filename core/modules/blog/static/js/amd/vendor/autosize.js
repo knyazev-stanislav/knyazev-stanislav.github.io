@@ -1,7 +1,7 @@
 /*!
 	Autosize 3.0.17
 	license: MIT
-	http://www.jacklmoore.com/autosize
+	https://www.jacklmoore.com/autosize
 */
 (function(global, factory) {
     if (typeof define === 'function' && define.amd) {
